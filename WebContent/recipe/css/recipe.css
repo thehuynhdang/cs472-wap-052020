@@ -54,5 +54,11 @@ h2 {
 .usercomment {
 	margin-left:30px;
 	margin-right:30px;
-	background-color: yellow;
+	background-color: #FFFFA8;
+}
+
+.directionHeader {
+	font-weight: bold;
+	font-style: italic;
+	background-color: #FFFFA8;
 }
