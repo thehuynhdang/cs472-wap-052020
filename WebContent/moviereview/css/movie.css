@@ -2,7 +2,6 @@ body {
 	background-image: url("../images/background.png");
 	padding: 0;
 	margin: 0;
-	
 	font-size: 8pt;
 	font-family: Verdana, Tahoma, sans-serif;
 }
@@ -122,8 +121,6 @@ body {
 	text-align: center;
 	vertical-align: middle;
 	clear: both;
-	--background: #A2B964;
-	height:2.9vw;
 	border-bottom-left-radius: 16px;
 	font-weight: bold;
 }
