@@ -1,0 +1,35 @@
+.loginform-mainbox {
+	border: 10px solid #eee;
+	padding: 100px;
+	margin-top: 10px;
+}
+
+.urlbar {
+	margin-top: 50px;
+}
+
+.navintent {
+	border-left: 2px solid white;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.newproductform-mainbox {
+	padding: 100px;
+	margin-top: 10px;
+}
+
+.buttons {
+	float: right;
+	display: block;
+}
+
+.button {
+	padding-left: 10px;
+	display: inline-block;
+}
+
+.hello {
+	color: white;
+	padding-right: 10px;
+}

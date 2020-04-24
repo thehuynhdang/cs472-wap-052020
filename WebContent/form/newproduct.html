@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/form-style.css">
+	
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+    <title>New Product</title>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	  <a class="navbar-brand" href="#">MUM Golden Dome Market ::: SRM System</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	
+	  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active navintent">
+	        <a class="nav-link" href="#">Products</a>
+	      </li>
+	      <li class="nav-item navintent">
+	        <a class="nav-link" href="#">Supplies</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	       <span class="hello">Hello!</span>
+	      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Logout</button>
+	    </form>
+	  </div>
+	</nav>
+
+<main role="main" class="container">
+		<div class="container">
+			
+			  <form action="/" class="newproductform-mainbox">
+			  	<h2>New Product Form</h2><br>
+			    <div class="row">
+			    	<div class="col-md-6">
+			    		<div class="form-group">
+					      <label for="txtProductNbr">Product Number</label>
+					      <input type="text" class="form-control" id="txtProductNbr" name="productNbr">
+					    </div>
+			    	</div>
+			    	<div class="col-md-6">
+			    		<div class="form-group">
+					      <label for="txtQuantity">Quantity in stock</label>
+					      <input type="text" class="form-control" id="txtQuantity" name="quantity">
+					    </div>
+			    	</div>
+			    </div>
+			    <div class="row">
+			    	<div class="col-md-6">
+			    		<div class="form-group">
+					      <label for="txtName">Name</label>
+					      <input type="text" class="form-control" id="txtName" name="productName">
+					    </div>
+			    	</div>
+			    	<div class="col-md-6">
+			    		<div class="form-group">
+						  <label for="txtSupplier">Supplier</label>
+						  <select class="form-control" id="txtSupplier" name="supplier">
+						    <option>Select a supplier</option>
+						    <option>Amazon</option>
+						    <option>Target</option>
+						    <option>Walmart</option>
+						  </select>
+						</div> 
+			    	</div>
+			    </div>
+			    
+			    <div class="row">
+			    	<div class="col-md-6">
+			    		<div class="form-group">
+					      <label for="txtPrice">Unit Price</label>
+					      <input type="text" class="form-control" id="txtPrice" name="price">
+					    </div>
+			    	</div>
+			    	<div class="col-md-6">
+			    		<div class="form-group">
+					      <label for="txtSuppliedDate">Date supplied</label>
+					      <input type="text" class="form-control" id="txtSuppliedDate" name="SuppliedDate">
+					      <label class="text-secondary">Enter a valid date</label>
+					    </div>
+			    	</div>
+			    </div>
+			     <div class="row">
+				     <div class="col-md-12">
+				     	<div class="buttons">
+				     		<div class="button"><button type="reset" class="btn btn-outline-dark">Reset</button></div>
+				     		<div class="button"><button type="button" class="btn btn-outline-danger">Cancel</button></div>
+				     		<div class="button"><button type="submit" class="btn btn-outline-info">Add Product</button></div>
+				     	</div>
+				     </div>
+			     	
+			     </div>
+			    
+			  </form>
+		</div>
+
+</main><!-- /.container -->
+
+</body>
+</html>
