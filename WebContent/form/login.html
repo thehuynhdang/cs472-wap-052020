@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/form-style.css">
+	<script src="js/app.js"></script>
     <title>Login</title>
   </head>
   <body>
@@ -16,6 +17,10 @@
   	
   	<main>
   		<div class="container">
+			 <div class="clock">
+		        <p id="showClock"> <script>clock();</script> </p>
+			  </div>
+			  
   			 <div class="urlbar">
 		        <input type="text" name="url" size="100" class="form-control" placeholder="URL" pattern="https?://.+"/>
 		      </div>
@@ -35,7 +40,7 @@
 		        <input type="checkbox" name="remember"> Check me out.
 		      </label>
 		    </div>
-		    <button type="submit" class="btn btn-primary">Submit</button>
+		    <button type="submit" class="btn btn-primary" onclick="return logLoginConsole();">Submit</button>
 		  </form>
 		</div>
   	

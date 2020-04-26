@@ -8,6 +8,14 @@
 	margin-top: 50px;
 }
 
+.clock {
+	font-size: 20pt;
+	background-color: cadetblue;
+	padding: 3px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
 .navintent {
 	border-left: 2px solid white;
 	padding-left: 10px;
