@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text Decorator</title>
+		<link href="css/decoratemytext.css" type="text/css" rel="stylesheet" />
+
+		<!--
+		This is a widely-used JavaScript library named jQuery that has
+		many useful functions which we need.
+		Please don't remove this link or change its URL; leave it as-is!
+		-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
+		<!-- link to your script file here -->
+		<script src="js/decoratemytext.js"></script>
+		
+	</head>
+
+	<body>
+		<h1>Text Decorator</h1>
+		
+		<div>
+			<img src="images/decorated.jpg" alt="very decorated!" />
+		</div>
+
+		<!-- Your UI controls go here -->
+		<fieldset class="fieldsetBorder">
+			<legend>Text</legend>
+			<textarea id="txtComment" rows="4" cols="30"></textarea>
+		</fieldset>
+		
+		<fieldset class="fieldsetBorder">
+			<legend>Decorator</legend>
+			<button type="button" onclick="decorateByInterval();">Bigger Decorations!</button>
+			<input id="chkBling" type="checkbox" onchange="changeBling(this);"> Bling
+		</fieldset>
+		
+	</body>
+</html>
