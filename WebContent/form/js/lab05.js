@@ -1,3 +1,8 @@
+/**
+ * Solutions for the lab 05
+ * lab05.js
+ */
+
 window.onload = function() {
 	//1.	Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.
 	function max(n1, n2) {

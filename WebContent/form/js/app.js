@@ -4,6 +4,8 @@ function logLoginConsole() {
 
     var pwd = document.getElementById("pwd");
     console.log("Password=" + pwd.value);
+    
+    return false;
 }
 
 function showNewProductInfo() {

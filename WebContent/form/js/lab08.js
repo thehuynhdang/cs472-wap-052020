@@ -1,3 +1,8 @@
+/**
+ * Solutions for the lab 08
+ * lab08.js
+ */
+
 /** Solution 6*/
 class Counter {
 	constructor() {
