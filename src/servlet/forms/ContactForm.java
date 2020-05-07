@@ -14,7 +14,7 @@ public class ContactForm extends BaseValidationForm {
 	private String message;
 	
 	public ContactForm(HttpServletRequest request) {
-		super(request, "/contactusview");
+		super(request, "/viewcontactus");
 		this.customerName = request.getParameter("customerName");
 		this.gender = request.getParameter("gender");
 		this.category = request.getParameter("category");

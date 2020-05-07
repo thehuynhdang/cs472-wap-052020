@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import servlet.forms.ContactForm;
 
-@WebServlet("/contactusview")
+@WebServlet("/contactuspage")
 public class ContactPage extends LayoutPage {
 	private static final long serialVersionUID = 1L;
 	

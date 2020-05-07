@@ -3,7 +3,7 @@ package servlet.pages;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 
-@WebServlet("/thankyou")
+@WebServlet("/thankyoupage")
 public class ThankyouPage extends LayoutPage {
 	private static final long serialVersionUID = 1L;
 

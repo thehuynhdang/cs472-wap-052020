@@ -11,6 +11,13 @@ import servlet.forms.BaseValidationForm;
 
 public abstract class BaseAction<T extends BaseValidationForm> extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private int hitCount;
+	
+	@Override
+	public void init() throws ServletException {
+		super.init();
+		hitCount = 0;
+	}
 	
 	@Override
 	protected void doGet(HttpServletRequest req, 
@@ -21,6 +28,8 @@ public abstract class BaseAction<T extends BaseValidationForm> extends HttpServl
 	@Override
 	protected void doPost(HttpServletRequest req, 
 			HttpServletResponse resp) throws ServletException, IOException {
+		req.setAttribute("hitCount", ++hitCount);
+		
 		T form = createValidationForm(req);
 		if(form != null && !form.validate()) {
 			form.redisplay();

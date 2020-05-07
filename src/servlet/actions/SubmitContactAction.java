@@ -8,17 +8,14 @@ import javax.servlet.http.HttpServletRequest;
 
 import servlet.forms.ContactForm;
 
-@WebServlet("/contactussubmit")
-public class ContactAction extends BaseAction<ContactForm> {
+@WebServlet("/submitcontactus")
+public class SubmitContactAction extends BaseAction<ContactForm> {
 	private static final long serialVersionUID = 1L;
 
 	@Override
 	public String execute(ContactForm contactForm) throws ServletException, IOException {
-		return "redirect:thankyou?customerName=" 
-				+ contactForm.getCustomerName() 
-				+ "&gender=" + contactForm.getGender()
-				+ "&category=" + contactForm.getCategory()
-				+ "&message=" + contactForm.getMessage();
+		contactForm.getRequest().setAttribute("contact", contactForm);
+		return "WEB-INF/pages/thankyou.jsp";
 	}
 
 	@Override
