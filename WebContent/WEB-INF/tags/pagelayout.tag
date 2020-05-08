@@ -36,8 +36,8 @@
                         <a class="nav-link" href="/cs472lab/viewcontactus">Contact Us</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                	<input class="form-control" type="text" name="search" id="search" placeholder="search">&nbsp;
+                <form class="form-inline my-2 my-lg-0" action="contact-messages-search" method="POST"> 
+                	<input class="form-control" type="text" name="queryString" id="search" placeholder="search" value="${queryString}">&nbsp;
                     <button id="btnSearch" type="submit" class="btn btn-secondary btn-inline">Search</button>       
                     
                 </form>

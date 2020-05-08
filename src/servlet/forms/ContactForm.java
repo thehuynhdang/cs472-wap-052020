@@ -44,12 +44,6 @@ public class ContactForm extends BaseValidationForm {
 		return true;
 	}
 	
-	@Override
-	public void redisplay() {
-		this.getRequest().setAttribute("customerName", getCustomerName());
-		
-	}
-
 	public String getCustomerName() {
 		return customerName;
 	}

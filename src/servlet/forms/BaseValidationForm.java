@@ -23,6 +23,5 @@ public abstract class BaseValidationForm implements Serializable {
 	}
 
 	public abstract boolean validate();
-	public abstract void redisplay();
 	
 }

@@ -32,7 +32,6 @@ public abstract class BaseAction<T extends BaseValidationForm> extends HttpServl
 		
 		T form = createValidationForm(req);
 		if(form != null && !form.validate()) {
-			form.redisplay();
 			req.setAttribute("formBean", form);
 			req.getRequestDispatcher(form.getInputPage()).forward(req, resp);
 			return;
