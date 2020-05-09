@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The South West - Regional Census - Form</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/spacelab/bootstrap.min.css" rel="stylesheet" integrity="sha384-nl8CRcNYOGaXP68QRJeVTXCWAhwqBhRha0QbuubX1qDQpGT3GgclpvyzkR2JzyfZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main-styles.css">
+    
+    <script defer src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a style="padding-right: 2em;" class="navbar-brand" href="index.html">The South West - Regional Census</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item" style="border-left: white 1px solid; padding-left: 2em; padding-right: 2em;">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active" style="border-left: white 1px solid; padding-left: 2em; padding-right: 2em;">
+                        <a class="nav-link" href="census-form.html">Census Form</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <span style="color: #ffffff; margin-right: 0em;" >Monday, 6 April 2020 - 08:21:37 AM</span>
+                </form>
+            </div>
+        </nav>    
+        <!-- End Navbar -->
+    </header>
+
+    <!-- Start main-content -->
+    <main>
+        <div style="padding-top: 1em;" class="container">
+            <!-- TODO: Add main content here -->
+            <h3>Census Form</h3>
+            <hr>
+            <form id="censusForm" method="post">
+                <fieldset>
+                    <legend></legend>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="hidden" id="editedRowId" value="" >
+                                <label for="fullName">*Full Name:</label>
+                                <input class="form-control" type="text" name="fullName" id="fullName" placeholder="Enter your Full Name" required autofocus>
+                                <small class="form-text text-muted">Enter your Full Name as printed on your Government-issued ID</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="citizenId">*Citizen ID:</label>
+                                <input pattern="\d{10}" class="form-control" type="text" name="citizenId" id="citizenId" placeholder="XXXXXXXXXX" required>
+                                <small class="form-text text-muted">Enter your 10-Digit Citizen ID</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="ssn">*Social Security Number:</label>
+                                <input pattern="\d{3}-\d{2}-\d{4}" class="form-control" type="text" name="ssn" id="ssn" placeholder="XXX-XX-XXXX" required>
+                                <small class="form-text text-muted">Enter your Social Security Number (in the format shown)</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="ddlState">*State:</label>
+                                <select required class="form-control" id="ddlState" name="ddlState">
+                                    <option value="">Select...</option>
+                                    <option value="Arizona">Arizona</option>
+                                    <option value="New Mexico">New Mexico</option>
+                                    <option value="Texas">Texas</option>
+                                </select>
+                                <small class="form-text text-muted">Select your State of residence</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>*Senior Citizen?</label><br>
+                            <div class="form-group">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input required type="radio" name="radioSeniorCitizen" id="radioradioSeniorCitizenYes" class="custom-control-input" value="Yes">
+                                    <label for="radioradioSeniorCitizenYes" class="custom-control-label">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input required type="radio" name="radioSeniorCitizen" id="radioradioSeniorCitizenNo" class="custom-control-input" value="No">
+                                    <label for="radioradioSeniorCitizenNo" class="custom-control-label">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            &nbsp;
+                        </div>
+                        <div style="text-align: right;" class="col-md-6">
+                            <button style="padding: .5em 4em;" id="btnReset" type="reset" class="btn btn-secondary btn-inline">Reset</button>
+                            <button style="margin-left: 1em; padding: .5em 4em;" id="btnSubmit" type="submit" class="btn btn-primary btn-inline">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div style="margin-top: 1em;" id="divCitizensList" style="font-size: 1em">
+                <table class="table table-striped" id="dataTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">Citizen ID</th>
+                            <th scope="col">Social Security</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">State</th>
+                            <th scope="col">Senior</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyCitizensList">
+                        <tr style="display: none;">
+                            <td class="colCitizenId"></td>
+                            <td class="colSSN"></td>
+                            <td class="colFullName"></td>
+                            <td class="colState"></td>
+                            <td class="colSenior"></td>
+                            <td class="colRemove">Remove</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- End main-content -->
+
+    <!-- Start footer -->
+    <footer>
+        <div>
+            <span style="margin-left: 1em;">O. Kalu ::: CS472-WAP</span>
+            <span style="float: right;margin-right: 1em;">&copy; April 2020</span>
+        </div>
+    </footer>
+</body>
+</html>
