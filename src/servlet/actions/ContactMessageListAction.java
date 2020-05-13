@@ -29,7 +29,7 @@ public class ContactMessageListAction extends BaseAction<BaseValidationForm>  {
         	 validationForm.getRequest().setAttribute("contactMessages", contactMessages);
         }
 
-		return "/WEB-INF/views/contact-messages.jsp";
+		return "/WEB-INF/pages/contact-messages-list.jsp";
 	}
 
 	@Override

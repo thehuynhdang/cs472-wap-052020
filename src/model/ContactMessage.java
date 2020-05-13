@@ -6,12 +6,9 @@ public class ContactMessage {
 	private String category;
 	private String message;
 
-	public ContactMessage() {
-		
-	}
+	public ContactMessage() {}
 
 	public ContactMessage(String customerName, String gender, String category, String message) {
-		super();
 		this.customerName = customerName;
 		this.gender = gender;
 		this.category = category;

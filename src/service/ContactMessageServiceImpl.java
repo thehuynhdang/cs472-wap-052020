@@ -29,4 +29,9 @@ public class ContactMessageServiceImpl implements IContactMessageService {
 		return contactMessageDAO.loadContactMessages();
 	}
 
+	@Override
+	public void addNewContactMessage(ContactMessage contactMessage) {
+		contactMessageDAO.addNewContactMessage(contactMessage);
+	}
+
 }

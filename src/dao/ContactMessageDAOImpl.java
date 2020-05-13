@@ -12,4 +12,9 @@ public class ContactMessageDAOImpl implements IContactMessageDAO {
 		return ContactMessageFactory.getInstance().getContactMessages();
 	}
 
+	@Override
+	public void addNewContactMessage(ContactMessage contactMessage) {
+		ContactMessageFactory.getInstance().getContactMessages().add(contactMessage);
+	}
+
 }

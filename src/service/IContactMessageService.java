@@ -8,5 +8,6 @@ import model.SearchCriteria;
 public interface IContactMessageService {
 	public List<ContactMessage> search(SearchCriteria searchCriteria);
 	public List<ContactMessage> loadContactMessages();
+	public void addNewContactMessage(ContactMessage contactMessage);
 
 }

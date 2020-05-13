@@ -6,4 +6,5 @@ import model.ContactMessage;
 
 public interface IContactMessageDAO {
 	public List<ContactMessage> loadContactMessages();
+	public void addNewContactMessage(ContactMessage contactMessage);
 }
